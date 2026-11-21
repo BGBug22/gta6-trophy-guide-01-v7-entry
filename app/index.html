@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Leonida Legend — GTA VI Trophy Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-top">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Leonida, USA</p>
+    <h1>Leonida Legend</h1>
+    <p class="subtitle">The complete GTA VI trophy guide — all 55 official trophies, every step cited, built to be finished in one playthrough.</p>
+  </div>
+  <div class="pills" id="pills"></div>
+  <div class="progress-wrap">
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+    <p id="progress-text">0 of 55 earned</p>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button type="button" class="tab active" data-tab="checklist" role="tab">Checklist</button>
+  <button type="button" class="tab" data-tab="roadmap" role="tab">Roadmap</button>
+  <button type="button" class="tab" data-tab="sources" role="tab">Sources &amp; Audit</button>
+</nav>
+
+<main>
+<section id="tab-checklist" class="panel active">
+  <div class="controls">
+    <label class="search">Search <input id="search" type="search" placeholder="Trophy name or keyword&hellip;" autocomplete="off"></label>
+    <label>Grade
+      <select id="grade">
+        <option value="all">All</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="check"><input id="hide-earned" type="checkbox"> Hide earned</label>
+    <label class="check"><input id="spoiler" type="checkbox" checked> Spoiler shield (hide 28 hidden)</label>
+    <button id="export" type="button">Export progress</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  </div>
+  <p id="filter-count" class="filter-count"></p>
+  <div class="columns">
+    <div class="col col-trophies">
+      <h2>Trophies</h2>
+      <ul id="trophy-list" class="trophy-list"></ul>
+    </div>
+    <div class="col col-guide">
+      <h2>Guide</h2>
+      <div id="guide-detail" class="guide-detail"><p class="muted">Select a trophy on the left to see its steps, counter, and notes.</p></div>
+    </div>
+    <div class="col col-sources">
+      <h2>Sources</h2>
+      <div id="source-detail" class="source-detail"><p class="muted">Sources for the selected trophy appear here.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tab-roadmap" class="panel">
+  <h2>Roadmap to the Platinum</h2>
+  <p class="muted">Seven stages, in order. Finish the story first, then clean up by theme — nothing here needs a second playthrough.</p>
+  <ol id="roadmap-list" class="roadmap"></ol>
+</section>
+
+<section id="tab-sources" class="panel">
+  <h2>Sources &amp; Audit</h2>
+  <div class="two-col">
+    <div>
+      <h3>Sources</h3>
+      <p class="muted">Links are passive — this guide makes no network requests. A source marked LIVE LINK returned HTTP 200 when checked; a source marked TEXT ONLY returned 403 and is cited by name only.</p>
+      <ul id="source-list" class="source-list"></ul>
+    </div>
+    <div>
+      <h3>Audit</h3>
+      <div id="audit" class="audit"></div>
+      <h3>Flag summary</h3>
+      <ul id="flags" class="flags"></ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Leonida Legend — an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. Trophy names and descriptions are the official PlayStation list as published 18 November 2026. This guide works fully offline.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
